@@ -111,65 +111,110 @@
         "pic": "dnd",
         "title": "DnD",
         "description": [
-          "A cooperative adventure game.",
-          "Gather with friends and embark on an adventure!"
+          "A cooperative adventure game. Gather with friends and embark on an adventure!"
         ],
-        "traits": "Cooperative, dice rolls, fantasy-oriented.",
-        "isConcept": false,
+        "traits": "Familiar and original worlds; Stats and dice; Familiar DnD rules; Fantasy theme",
         "status": "ready",
         "link": {
           "href": "https://t.me/AIAtlant_bot"
         },
         "alttext": "Image of a dragon and a knight",
-        "fullDescription": "You are competing wizards and witches. Clients come to you with all sorts of problems, from Brad Pitt to Harry Potter. Come up with the best solutions, and compete for clients and their money!\n\nYou are competing wizards and witches. Clients come to you with all sorts of problems, from Brad Pitt to Harry Potter. Come up with the best solutions, and compete for clients and their money!\n\nYou are competing wizards and witches. Clients come to you with all sorts of problems, from Brad Pitt to Harry Potter. Come up with the best solutions, and compete for clients and their money!\n\n**Features:**\nFunny and unconventional tasks. Fun competition for the most original, funniest, and most logical solution.\n\nFunny and unconventional tasks. Fun competition for the most original, funniest, and most logical solution.\n\nFunny and unconventional tasks. Fun competition for the most original, funniest, and most logical solution.\n\nFunny and unconventional tasks. Fun competition for the most original, funniest, and most logical solution."
+        "fullDescription": "DnD is a well-known role-playing system that has been played by people worldwide for over 50 years! We offer an opportunity to dive into the world of RPG adventures with familiar rules, alone or in co-op with friends, with complete freedom of action.\n\nRoleplay, explore dungeons, find treasures, gear up, charm enemies, disarm traps, and solve puzzles, either alone or with friends in one of the following worlds:  \n - Classic  \n - Vampire: The Masquerade  \n - Call of Cthulhu  \n - Naruto"
       },
       {
         "id": "game-2",
         "pic": "sloveska",
         "title": "Chronicles",
         "description": [
-          "A DnD spin-off focusing on player independence, a larger world, and freedom."
+          "A spin-off from DnD, focused on player independence, a more global world, and freedom."
         ],
-        "traits": "A free sandbox in any setting you want.",
-        "isConcept": false,
+        "traits": "Free sandbox; No formal rules; Any character, any activity, any goal",
         "status": "ready",
         "link": {
           "href": "https://t.me/AIAtlant_bot"
         },
         "alttext": "",
-        "fullDescription": "A DnD spin-off focusing on player independence, a larger world, and freedom.\n\n**Features:**\nA free sandbox in any setting you want."
+        "fullDescription": "Chronicles is a story-based RPG derived from the DnD universe. You are offered several places in a specific world, then several characters from the chosen location. After that, absolute freedom awaits. Gather rare herbs and become the best reclusive healer, create a business selling implants and capture new markets, or lead the Iroquois Confederation to hegemony in Europe. Choose your path, goals, and methods - it’s all up to you!\n\n**Additional features:**  \n - Compete, cooperate with friends, or ignore them (also playable solo)  \n - Choose your path and methods  \n - Set your own goal and endgame  \n - Create something truly unique: medicines, races, societies, states, businesses - anything!"
       },
       {
         "id": "game-3",
         "pic": "vedmy",
-        "title": "Witches",
+        "title": "Magic Fixers",
         "description": [
-          "You are competing wizards and witches. Clients come to you with all sorts of problems, from Brad Pitt to Harry Potter. Come up with the best solutions, and compete for clients and their money!"
+          "You are competing wizards and witches. Clients come to you with various problems, from Brad Pitt to Harry Potter. Come up with the best solutions and fight for clients and their money!"
         ],
-        "traits": "Funny and unconventional tasks. Fun competition for the most original, funniest, and most logical solution.",
-        "isConcept": false,
-        "status": "rework",
+        "traits": "Funny and unusual challenges. A fun competition for the most original, humorous, and logical solution",
+        "badge": "Coming Soon",
+        "status": "dev",
         "link": {
           "href": "https://t.me/AIAtlant_bot"
         },
-        "alttext": "A sorceress with a magic ball",
-        "fullDescription": "You are competing wizards and witches. Clients come to you with all sorts of problems, from Brad Pitt to Harry Potter. Come up with the best solutions, and compete for clients and their money!\n\n**Features:**\nFunny and unconventional tasks. Fun competition for the most original, funniest, and most logical solution."
+        "alttext": "A sorceress with a crystal ball",
+        "fullDescription": "Magic Fixers is an opportunity to have fun, laugh, and tackle unusual challenges in a unique context. When else will you have all the magical powers of your imagination to restore Nicolas Cage’s career or reboot the Harry Potter franchise?\n\n**Additional features:**  \n - Famous clients: stars from pop culture, actors, and fictional characters  \n - Clients’ evaluations of your proposals  \n - The outcomes of your actions  \n - Unlimited magical (and non-magical) advice, tips, and solutions"
       },
       {
         "id": "game-4",
         "pic": "strateg",
         "title": "Strategy",
         "description": [
-          "Lead one of the states and use commands to bring it to prosperity."
+          "Lead one of the nations and guide it to prosperity through your commands."
         ],
-        "traits": "Economy, politics, culture - all under your control. Absolute freedom of action. Try to create any state while competing with others!",
-        "isConcept": false,
+        "traits": "Economy, politics, culture - all in your control. Complete freedom of action. Try creating your own state in competition with others!",
+        "badge": "Coming Soon",
         "status": "dev",
         "link": {
           "href": "https://t.me/AIAtlant_bot"
         },
-        "alttext": "The castle is far away",
-        "fullDescription": "Lead one of the states and use commands to bring it to prosperity.\n\n**Features:**\nEconomy, politics, culture - all under your control. Absolute freedom of action. Try to create any state while competing with others!"
+        "alttext": "A distant castle",
+        "fullDescription": "Strategy gives you the chance to feel like a real ruler of a historical state across several eras. The game adapts to the player's style and deepens based on their actions: social, economic, diplomatic, or military pursuits in any combination. Lead your nation on a unique path and turn Sparta into a high-tech capital, or turn the British Empire into a libertarian anarchy or a conservative theocracy - it's all in your hands!\n\n**Additional features:**  \n - 6 eras to choose from  \n - Hundreds of historical nations  \n - Your political interests and focus - your game  \n - Alternate history possibilities like never before"
+      },
+      {
+        "id": "game-5",
+        "pic": "korol",
+        "title": "Royal Battle",
+        "description": [
+          "You will be dropped into a random world where you will compete against bots for survival and achieving the final goal, either alone or with friends."
+        ],
+        "traits": "A limited game where the goal is to survive and escape; Search for exits, hide, and find gear; Fight or cooperate",
+        "badge": "Coming Soon",
+        "status": "dev",
+        "link": {
+          "href": "https://t.me/AIAtlant_bot"
+        },
+        "alttext": "Fighting knights",
+        "fullDescription": "Royal Battle is everything we love about Battle Royale games and more. You’ll be thrown into a world where you must survive and complete your objective. The real Hunger Games! Find what you need, navigate the terrain, and communicate with other participants - choose your strategy and win!\n\n**Additional features:**  \n - Randomly generated worlds, from post-apocalypse to gothic fantasy;  \n - A serious challenge to compete with friends in a new way;  \n - Freedom of choice in strategy and tactics;  \n - Results, points, and achievements for each player at the end!"
+      },
+      {
+        "id": "game-6",
+        "pic": "bogi",
+        "title": "Gods of Civilization",
+        "description": [
+          "An entirely new vision and gameplay. On a random planet, culture and civilization begin to emerge. As gods, your task is to help it evolve and survive."
+        ],
+        "traits": "Indirect influence on civilization; Fight for faith among members of civilization; Unusual challenges in helping the civilization",
+        "badge": "Coming Soon",
+        "status": "dev",
+        "link": {
+          "href": "https://t.me/AIAtlant_bot"
+        },
+        "alttext": "A deity on a pegasus",
+        "fullDescription": "Civilization is emerging, but gods can’t directly interfere with its development. How can you carry out the creator's will and save their creation from oblivion? First, we suggest summoning a lightning bolt to the nearest tree to give people fire! Use physical and natural abilities and events to guide the civilization in solving its problems and growing. Strengthen faith in yourself with hints and reminders. Lead your civilization down your path to prosperity!\n\n**Additional features:**  \n - Alternate civilization development  \n - Random planets with unique characteristics  \n - Unusual and ambiguous outcomes from the gods' actions  \n - Peculiar cultural and technological evolution"
+      },
+      {
+        "id": "game-7",
+        "pic": "skazka",
+        "title": "Fairy Tale",
+        "description": [
+          "Kids want a bedtime story set in the world of Harry Potter, dinosaurs, or fairies? Maybe all at once? The books are out, and you want something new? We offer a solution to your problem: describe your kids and their wishes (or even your own), and the game will create a custom fairy tale for your request."
+        ],
+        "traits": "Creating a personalized fairy tale based on your request; Considering age-related perception differences; Any setting and plot; Interaction and choices",
+        "badge": "Coming Soon",
+        "status": "dev",
+        "link": {
+          "href": "https://t.me/AIAtlant_bot"
+        },
+        "alttext": "",
+        "fullDescription": "Fairy Tale is your personal interactive story constructor for children. Describe them and their wishes, and the game will create a unique personalized story for you.\n\n**Additional features:**  \n - Decision-making that influences the plot  \n - Stylistic and plot adaptation based on your choices and desires  \n - End results, achievements at the end of the story  \n - Infinite story generation possibilities: you can always start a new or continue an old story"
       }
     ]
   },

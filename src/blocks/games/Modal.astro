@@ -3,6 +3,7 @@ import { marked } from "marked";
 import Badge from "../../ui/Badge.astro";
 
 const { game, utils, class: className, ...rest } = Astro.props;
+const BASE_IMG_URL = "/images/games";
 ---
 
 <div
@@ -19,16 +20,16 @@ const { game, utils, class: className, ...rest } = Astro.props;
       {game.isConcept && <Badge class="modal__badge">{utils.concept}</Badge>}
       <picture class="modal__illustration">
         <source
-          srcset={`/images/${game.pic}-1x.webp 1x, /images/${game.pic}-3x.webp 2x`}
+          srcset={`${BASE_IMG_URL}/${game.pic}-1x.webp 1x, ${BASE_IMG_URL}/${game.pic}-3x.webp 2x`}
           type="image/webp"
         />
         <source
-          srcset={`/images/${game.pic}-1x.jpg 1x, /images/${game.pic}-3x.jpg 2x`}
+          srcset={`${BASE_IMG_URL}/${game.pic}-1x.jpg 1x, ${BASE_IMG_URL}/${game.pic}-3x.jpg 2x`}
           type="image/jpeg"
         />
         <img
           width="200"
-          src={`/images/${game.pic}-1x.jpg`}
+          src={`${BASE_IMG_URL}/${game.pic}-1x.jpg`}
           alt={game?.alttext || ""}
         />
       </picture>
