@@ -1,4 +1,5 @@
 ---
+import LanguagePicker from "../../components/LanguagePicker/LanguagePicker.astro";
 import Link from "../../ui/Link.astro";
 import HeaderActions from "./HeaderActions.astro";
 import ModalMenu from "./ModalMenu.astro";
@@ -17,12 +18,18 @@ const { menu, headerButtons } = Astro.props;
       ))
     }
   </nav>
-  <div class="header__actions">
-    <HeaderActions headerButtons={headerButtons} />
+  <div class="header__actionsBlock">
+    <div class="header__actions">
+      <HeaderActions headerButtons={headerButtons} />
+    </div>
+
+    <div class="header__langPicker">
+      <LanguagePicker />
+    </div>
+    <button class="header__burger" data-menu-burger>
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
   </div>
-  <button class="header__burger" data-menu-burger>
-    <span class="visually-hidden">Открыть меню</span>
-  </button>
   <ModalMenu menu={menu} headerButtons={headerButtons} />
 </header>
 
@@ -137,8 +144,22 @@ const { menu, headerButtons } = Astro.props;
     background-image: url("/close.svg");
   }
 
+  .header__actionsBlock {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+  }
+
   .header__actions {
     display: none;
+    align-items: center;
+  }
+
+  .header__langPicker {
+    --lang-option-bg: var(--accent-2-secondary);
+    position: relative;
+    z-index: 10;
   }
 
   .menu-item {

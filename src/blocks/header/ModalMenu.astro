@@ -1,6 +1,6 @@
 ---
-import Link from '../../ui/Link.astro';
-import HeaderActions from './HeaderActions.astro';
+import Link from "../../ui/Link.astro";
+import HeaderActions from "./HeaderActions.astro";
 const { menu, headerButtons } = Astro.props;
 ---
 
@@ -9,9 +9,18 @@ const { menu, headerButtons } = Astro.props;
     <HeaderActions headerButtons={headerButtons} />
   </div>
   <nav class="menu-modal__nav">
-    {menu.map((item) => (
-      <Link data-menu-item href={item.href} class="menu-item" data-menu-closer>{item.title}</Link>
-    ))}
+    {
+      menu.map((item) => (
+        <Link
+          data-menu-item
+          href={item.href}
+          class="menu-item"
+          data-menu-closer
+        >
+          {item.title}
+        </Link>
+      ))
+    }
   </nav>
 </div>
 

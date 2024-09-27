@@ -1,5 +1,5 @@
 ---
-
+import LanguagePicker from "../../../components/LanguagePicker/LanguagePicker.astro";
 ---
 
 <header class="header container">
@@ -37,17 +37,29 @@
       </svg>
     </figure>
   </div>
+  <div class="header__langPicker">
+    <LanguagePicker />
+  </div>
 </header>
 
 <style>
   .header {
     position: relative;
-    z-index: 5;
+    z-index: 6;
     height: 82px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 32px;
+  }
+
+  .header__langPicker {
+    --lang-option-bg: var(--text);
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    z-index: 20;
   }
 
   .logo {
@@ -61,7 +73,14 @@
 
   @media (min-width: 768px) {
     .header {
-      justify-content: start;
+      justify-content: space-between;
+    }
+
+    .header__langPicker {
+      position: relative;
+      transform: none;
+      top: initial;
+      right: initial;
     }
   }
 

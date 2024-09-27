@@ -1,0 +1,103 @@
+---
+import { getLangFromUrl } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+const currentURL = Astro.url;
+
+const langMap = {
+  ru: {
+    id: "ru",
+    label: "🇷🇺",
+  },
+  en: {
+    id: "en",
+    label: "🇬🇧",
+  },
+};
+
+const optionsToRender = Object.values(langMap)
+  .filter((option) => option.id !== lang)
+  .map((option) => ({
+    ...option,
+    href: currentURL.toString().split(`/${lang}/`).join(`/${option.id}/`),
+  }));
+---
+
+<div class="language-picker">
+  <div class="language-select">
+    <div class="language-select__selected">{langMap[lang].label}</div>
+    <div class="language-select__options">
+      {
+        optionsToRender.map((option) => (
+          <a
+            class="language-select__option"
+            data-lang-value={option.id}
+            href={option.href}
+          >
+            {option.label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .language-select {
+    position: relative;
+    width: 46px;
+  }
+
+  .language-select__selected {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid var(--lang-option-bg, #eee);
+    background-color: var(--lang-option-bg, #eee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .language-select__options {
+    visibility: hidden;
+    pointer-events: none;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translate(0, -50%);
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: var(--lang-option-bg, #eee);
+    padding: 6px;
+    flex-direction: column;
+    gap: 4px;
+    z-index: -1;
+    transition: 0.4s ease;
+  }
+
+  .language-select__option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    background: var(--lang-option-bg, #eee);
+    border: 1px solid var(--lang-option-bg, #eee);
+    background-color: var(--lang-option-bg, #eee);
+    cursor: pointer;
+  }
+
+  .language-select__option:hover {
+    transform: scale(1.1);
+  }
+
+  .language-select:hover .language-select__options {
+    /* todo */
+    display: flex;
+    pointer-events: initial;
+    visibility: visible;
+    transform: none;
+    opacity: 1;
+  }
+</style>
