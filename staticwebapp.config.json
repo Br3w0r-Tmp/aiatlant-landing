@@ -1,9 +1,0 @@
-{
-  "routes": [
-      {
-          "route": "/*",
-          "redirect": "https://www.aiatlant.com",
-          "statusCode": 301
-      }
-  ]
-}
