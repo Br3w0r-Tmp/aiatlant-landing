@@ -1,7 +1,9 @@
 ---
 import { marked } from "marked";
 import Badge from "../../ui/Badge.astro";
-
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const { game, utils, class: className, ...rest } = Astro.props;
 const BASE_IMG_URL = "/images/games";
 ---
@@ -15,7 +17,7 @@ const BASE_IMG_URL = "/images/games";
   <article class="modal__body">
     <div class="modal__hero">
       <button class="modal__close" data-modal-close>
-        <span class="visually-hidden">Закрыть</span>
+        <span class="visually-hidden">{t("close")}</span>
       </button>
       {game.isConcept && <Badge class="modal__badge">{utils.concept}</Badge>}
       <picture class="modal__illustration">
