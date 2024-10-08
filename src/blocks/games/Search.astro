@@ -1,8 +1,13 @@
 ---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
+
 <div class="search">
-  <input class="search__input" type="text" id="game-search" placeholder=" ">
-  <label class="search__label" for="game-search">Найти</label>
+  <input class="search__input" type="text" id="game-search" placeholder=" " />
+  <label class="search__label" for="game-search">{t("search")}</label>
 </div>
 
 <style>
@@ -11,7 +16,7 @@
     height: 68px;
     min-width: 300px;
     border-radius: 37px;
-    background-color: #622CBC42;
+    background-color: #622cbc42;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,10 +29,10 @@
   }
 
   .search:after {
-    content: '';
+    content: "";
     width: 32px;
     height: 32px;
-    background-image: url('/search.svg');
+    background-image: url("/search.svg");
     background-repeat: no-repeat;
     background-size: calc(100% - 2px);
   }
@@ -75,7 +80,7 @@
   }
 
   .search:has(input:disabled)::after {
-    background-image: url('/search-blue.svg');
+    background-image: url("/search-blue.svg");
   }
 
   .search:has(input:disabled) .search__label {

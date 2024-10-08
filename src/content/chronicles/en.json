@@ -67,8 +67,8 @@
   },
   "banner": {
     "id": "banner",
-    "title": "Play Neurons!",
-    "text": "The game is dominated by artificial intelligence.",
+    "title": "Outplay the AI!",
+    "text": "A full-fledged artificial intelligence acts as the game's host",
     "call": "Can you beat the machine?",
     "imgAlt": "creatures playing on a console"
   },
