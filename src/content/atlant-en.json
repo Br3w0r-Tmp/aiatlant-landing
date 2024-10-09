@@ -215,6 +215,22 @@
         },
         "alttext": "",
         "fullDescription": "Fairy Tale is your personal interactive story constructor for children. Describe them and their wishes, and the game will create a unique personalized story for you.\n\n**Additional features:**  \n - Decision-making that influences the plot  \n - Stylistic and plot adaptation based on your choices and desires  \n - End results, achievements at the end of the story  \n - Infinite story generation possibilities: you can always start a new or continue an old story"
+      },
+      {
+        "id": "game-8",
+        "pic": "fighting",
+        "title": "Fighting",
+        "description": [
+          "Fight with iconic characters from the world of books, movies and games! Use the unique abilities of an individual fighter and build your strategy to win each battle."
+        ],
+        "traits": "Unique characters with individual abilities; Turn-based battles with a detailed damage calculation system; Epic fatalities to complete the battle; Unpredictable outcomes due to random character generation",
+        "badge": "Soon",
+        "status": "dev",
+        "link": {
+          "href": "https://t.me/AIAtlant_bot"
+        },
+        "alttext": "",
+        "fullDescription": "AIAtlant fighting game offers dynamic and exciting battles where every move counts. Choose one of the iconic characters and join the battle with the original settlement system. Choose a strategy, combine attacks and defense, and finish the fight with spectacular fatalities. In this game, every choice can lead to an unexpected victory or defeat. \n\n **Additional features:**:  \n - Points and ratings system for each winner  \n - A random selection of characters for the players  \n - The ability to use magic and special attacks  \n - Multiplayer for competitions with friends or AI"
       }
     ]
   },
