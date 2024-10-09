@@ -3,8 +3,6 @@ import { getLangFromUrl } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 
-const currentURL = Astro.url;
-
 const langMap = {
   ru: {
     id: "ru",
@@ -20,7 +18,6 @@ const optionsToRender = Object.values(langMap)
   .filter((option) => option.id !== lang)
   .map((option) => ({
     ...option,
-    href: currentURL.toString().split(`/${lang}/`).join(`/${option.id}/`),
   }));
 ---
 
@@ -30,18 +27,29 @@ const optionsToRender = Object.values(langMap)
     <div class="language-select__options">
       {
         optionsToRender.map((option) => (
-          <a
-            class="language-select__option"
-            data-lang-value={option.id}
-            href={option.href}
-          >
+          <button class="language-select__option" data-lang-value={option.id}>
             {option.label}
-          </a>
+          </button>
         ))
       }
     </div>
   </div>
 </div>
+
+<script define:vars={{ lang }}>
+  const options = document.querySelectorAll("[data-lang-value]");
+
+  options.forEach((option) => {
+    option.addEventListener("click", () => {
+      const btnLang = option.dataset.langValue;
+      const newLoc = window.location.pathname.replace(
+        `/${lang}/`,
+        `/${btnLang}/`
+      );
+      window.location.replace(newLoc);
+    });
+  });
+</script>
 
 <style>
   .language-select {
