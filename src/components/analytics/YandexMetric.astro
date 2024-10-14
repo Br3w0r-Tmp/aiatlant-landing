@@ -4,8 +4,8 @@ const code = isProd ? import.meta.env.ATLANT_Y_M_CODE : "YandexMetric";
 ---
 
 <!-- Yandex.Metrika counter -->
-<script async define:vars={{ code }}>
-  console.log("Yandex")(function (m, e, t, r, i, k, a) {
+<script async define:vars={{ code }} type="text/javascript">
+  (function (m, e, t, r, i, k, a) {
     m[i] =
       m[i] ||
       function () {
