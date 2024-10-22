@@ -1,18 +1,20 @@
 ---
 const isProd = import.meta.env.PROD;
-const code = isProd ? import.meta.env.ATLANT_G_A_CODE : 'GoogleAnalytics';
+const code = isProd ? import.meta.env.ATLANT_G_A_CODE : "GoogleAnalytics";
 ---
 
+<!-- Google counter -->
 <script
   define:vars={{ code }}
-  type="text/partytown"
   async
-  src=`https://www.googletagmanager.com/gtag/js?id=${code}`
-></script>
-<script type="text/partytown">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  src=`https://www.googletagmanager.com/gtag/js?id=${code}`></script>
 
-  gtag('config', code);
+<script define:vars={{ code }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", code);
 </script>
