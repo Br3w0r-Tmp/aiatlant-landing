@@ -1,6 +1,7 @@
 ---
 import { marked } from "marked";
-import Button from "../../ui/Button.astro";
+import Button from "../../../ui/Button.astro";
+import { UTM_MAP, UTM_PRFX } from "../../../constants/utm";
 
 const { data: hero } = Astro.props;
 ---
@@ -14,7 +15,7 @@ const { data: hero } = Astro.props;
   <div class="hero__btn">
     <Button
       tag="a"
-      href={hero.button.href}
+      href={hero.button.href + UTM_PRFX + UTM_MAP["common"]}
       class="hero__action"
       target="_blank"
       rel="noopener noreferrer">{hero.button.label}</Button

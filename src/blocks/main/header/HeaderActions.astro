@@ -1,5 +1,6 @@
 ---
-import Button from "../../ui/Button.astro";
+import { UTM_PRFX, UTM_MAP } from "../../../constants/utm";
+import Button from "../../../ui/Button.astro";
 
 const { headerButtons } = Astro.props;
 ---
@@ -9,7 +10,7 @@ const { headerButtons } = Astro.props;
     headerButtons.map((item) => (
       <Button
         tag="a"
-        href={item.href}
+        href={item.href + UTM_PRFX + UTM_MAP["common"]}
         class="action-item"
         target="_blank"
         rel="noopener noreferrer"

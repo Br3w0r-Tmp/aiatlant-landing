@@ -2,6 +2,7 @@
 import { marked } from "marked";
 import Button from "../../../ui/Button.astro";
 import Logo from "./Logo.astro";
+import { UTM_PRFX, UTM_MAP } from "../../../constants/utm";
 
 const { data, actionBtn } = Astro.props;
 ---
@@ -16,7 +17,7 @@ const { data, actionBtn } = Astro.props;
         class="hero__action animate__animated"
         data-animation="headShake"
         tag="a"
-        href={actionBtn.href}
+        href={actionBtn.href + UTM_PRFX + UTM_MAP["chronicles"]}
         target="_blank"
         rel="noopener noreferrer">{actionBtn.text}</Button
       >
