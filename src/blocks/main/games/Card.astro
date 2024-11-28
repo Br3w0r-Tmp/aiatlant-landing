@@ -1,4 +1,5 @@
 ---
+import { UTM_MAP, UTM_PRFX } from "../../../constants/utm";
 import Badge from "../../../ui/Badge.astro";
 import Button from "../../../ui/Button.astro";
 
@@ -42,7 +43,7 @@ const BASE_IMG_URL = "/images/games";
     >
     <Button
       tag="a"
-      href={game.link.href}
+      href={game.link.href + UTM_PRFX + UTM_MAP[game.pic]}
       class="game__button game__link"
       disabled={isDisabled}
       target="_blank"
