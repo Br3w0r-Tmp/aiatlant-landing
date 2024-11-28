@@ -1,8 +1,8 @@
 ---
 import { marked } from "marked";
-import Badge from "../../ui/Badge.astro";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-const lang = getLangFromUrl(Astro.url);
+import Badge from "../../../ui/Badge.astro";
+import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+const lang = getLangFromUrl(Astro.url) as "ru" | "en";
 const t = useTranslations(lang);
 const { game, utils, class: className, ...rest } = Astro.props;
 const BASE_IMG_URL = "/images/games";
