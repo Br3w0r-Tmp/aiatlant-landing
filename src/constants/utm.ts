@@ -1,13 +1,13 @@
 export const UTM_MAP = {
-  common: "utm_source---yandex__utm_medium---cpc__utm_campaign---rsysitecommom",
-  skazka: "utm_source---yandex__utm_medium---direct__utm_campaign---skazka",
-  strateg: "utm_source---yandex__utm_medium---direct__utm_campaign---stategy",
-  fighting: "utm_source---yandex__utm_medium---direct__utm_campaign---fight",
-  bogi: "utm_source---yandex__utm_medium---direct__utm_campaign---bogi",
-  korol: "utm_source---yandex__utm_medium---direct__utm_campaign---royalbattle",
-  dnd: "utm_source---yandex__utm_medium---direct__utm_campaign---dnd",
-  sloveska: "utm_source---yandex__utm_medium---direct__utm_campaign---chonici",
-  chronicles: "utm_source---yandex__utm_medium---cpc__utm_campaign---rsydirect",
+  common: "utm---yandex__cpc__rsysitecommom",
+  skazka: "utm---yandex__direct__skazka",
+  strateg: "utm---yandex__direct__stategy",
+  fighting: "utm---yandex__direct__fight",
+  bogi: "utm---yandex__direct__bogi",
+  korol: "utm---yandex__direct__royalbattle",
+  dnd: "utm---yandex__direct__dnd",
+  sloveska: "utm---yandex__direct__chonici",
+  chronicles: "utm---yandex__cpc__rsydirect",
 };
 
 export const UTM_PRFX = "?start=";
