@@ -1,13 +1,13 @@
 export const UTM_MAP = {
-  common: "utm---yandex__cpc__rsysitecommom",
-  skazka: "utm---yandex__direct__skazka",
-  strateg: "utm---yandex__direct__stategy",
-  fighting: "utm---yandex__direct__fight",
-  bogi: "utm---yandex__direct__bogi",
-  korol: "utm---yandex__direct__royalbattle",
-  dnd: "utm---yandex__direct__dnd",
-  sloveska: "utm---yandex__direct__chonici",
-  chronicles: "utm---yandex__cpc__rsydirect",
+  common: "utm---yandex___cpc___rsysitecommom",
+  skazka: "utm---yandex___direct___skazka",
+  strateg: "utm---yandex___direct___stategy",
+  fighting: "utm---yandex___direct___fight",
+  bogi: "utm---yandex___direct___bogi",
+  korol: "utm---yandex___direct___royalbattle",
+  dnd: "utm---yandex___direct___dnd",
+  sloveska: "utm---yandex___direct___chonici",
+  chronicles: "utm---yandex___cpc___rsydirect",
 };
 
 export const UTM_PRFX = "?start=";
